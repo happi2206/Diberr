@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="bootstrap-4.6.0-dist/css/bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   </head>
   <body>
@@ -266,7 +265,6 @@
         </div>
 
         <div class="container-fluid">
-            <div id="programscarouselIndicators" class="carousel slide mx-lg-5 mt-4" data-ride="carousel">
                 <!-- <ol class="carousel-indicators m-5 mb-5">
                     <li data-target="#programscarouselIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#programscarouselIndicators" data-slide-to="1"></li>
@@ -274,7 +272,7 @@
                     <li data-target="#programscarouselIndicators" data-slide-to="3"></li>
                   </ol> -->
 
-                  <div class="carousel-inner">
+
           <div class="mt-5 mx-lg-2 row row-cols-8">
             <p class="h1 col-8 mint" id="headerconstant">Programs</p>
 
@@ -303,9 +301,15 @@
               <span>Results Mentorship</span>
             </div>
           </div>
-        </div>
-        <div class="container-fluid-sm mt-4 d-flex justify-content-around row" id="cardsleadership">
-          <div class="card mr-lg-5" style="width: 22rem">
+          <div id="carouselProgramsIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselProgramsIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselProgramsIndicators" data-slide-to="1"></li>
+            </ol>
+        <div class="carousel-inner container-fluid-sm mt-4" id="cardsleadership">
+          <div class="carousel-item active">
+            <div class="row col-md-12">
+          <div class="card col-md mr-md-3">
             <img src="/images/card1.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="formheader mint">Excellence in Team Leadership Program</p>
@@ -327,7 +331,7 @@
               </button>
             </div>
           </div>
-          <div class="card mr-lg-5 container-fluid-sm" style="width: 22rem">
+          <div class="card col-md mr-md-3">
             <img src="/images/card2.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="formheader mint">Internal Consultant Program</p>
@@ -347,7 +351,7 @@
               </button>
             </div>
           </div>
-          <div class="container-fluid-sm card mr-lg-5" style="width: 22rem">
+          <div class="card col-md">
             <img src="/images/card3.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <p class="formheader mint">Excellence in Team Leadership Program</p>
@@ -370,7 +374,78 @@
             </div>
             </div>
           </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row col-md-12">
+          <div class="card col-md mr-md-3">
+            <img src="/images/carouselcards.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="formheader mint">Carousel 2</p>
+              <p class="card-text">
+                Developing manager/team lead’s ability to organize and lead
+                teams to produce and sustain extraordinary results. This program
+                is an expanded
+              </p>
+
+              <div class="cardsicon mint">
+                <i class="fas fa-brush pr-3"></i>
+                <i class="fas fa-fire-alt pr-3"></i>
+                <i class="fas fa-microphone pr-3"></i>
+                <i class="far fa-star pr-3"></i>
+              </div>
+
+              <button type="button" class="btn mt-4" id="outlinebutton">
+                Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card col-md mr-3">
+            <img src="/images/carouselcards2.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="formheader mint">Internal Consultant Program</p>
+              <p class="card-text">
+                Unlock exponential levels of performance and unleash the hidden potential of your organization. Immediately kickstart your transformational journey.
+              </p>
+
+              <div class="cardsicon mint">
+                <i class="fas fa-brush pr-3"></i>
+                <i class="fas fa-fire-alt pr-3"></i>
+                <i class="fas fa-microphone pr-3"></i>
+                <i class="far fa-star pr-3"></i>
+              </div>
+
+              <button type="button" class="btn mt-4" id="outlinebutton">
+                Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card col-md">
+            <img src="/images/carouselcards3.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="formheader mint">Excellence in Team Leadership Program</p>
+              <p class="card-text">
+                Developing manager/team lead’s ability to organize and lead
+                teams to produce and sustain extraordinary results. This program
+                is an expanded
+              </p>
+
+              <div class="cardsicon mint">
+                <i class="fas fa-brush pr-3"></i>
+                <i class="fas fa-fire-alt pr-3"></i>
+                <i class="fas fa-microphone pr-3"></i>
+                <i class="far fa-star pr-3"></i>
+              </div>
+
+              <button type="button" class="btn mt-4" id="outlinebutton">
+                Read More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+            </div>
+          </div>
+          </div>
         </div>
+        </div>
+
         </div>
 
         <div class="container-fluid-sm white mt-5">
@@ -408,7 +483,15 @@
           </h2>
         </div>
 
-        <div class="row mx-lg-3 my-4 row">
+        <div id="carouselPortalIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselPortalIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselPortalIndicators" data-slide-to="1"></li>
+          </ol>
+        <div class="carousel-inner container-fluid-sm my-4">
+          <div class="carousel-item active">
+          <div class="row col-md-12">
+          
         <div class="card mr-lg-4">
             <div class="card-body lastcards col">
                 <div class="rounded-circle card-circle mb-3">
@@ -448,6 +531,52 @@
               </button>
             </div>
           </div>
+          </div>
+        </div>
+          <div class="carousel-item">
+            <div class="row col-md-12">
+        <div class="card mr-lg-4">
+            <div class="card-body lastcards col">
+                <div class="rounded-circle card-circle mb-3">
+                    <img src="" alt="">
+                </div>
+              <h6 class="card-subtitle mb-2">Second slide</h6>
+              <h5 class="card-title mb-3">PM Jobs Portal</h5>
+              <p class="card-text mb-5">Connecting Project Professionals to Project Opportunities</p>
+              <button type="button" class="btn mt-4" id="mainbutton">
+                View Job Opportunities<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+        <div class="card mr-lg-4">
+            <div class="card-body lastcards col">
+                <div class="rounded-circle card-circle mb-3">
+                    <img src="" alt="">
+                </div>
+              <h6 class="card-subtitle mb-2">Your one-stop shop for Professional Certifications</h6>
+              <h5 class="card-title mb-3">Ace Series</h5>
+              <p class="card-text mb-5">The simplest and seamless way to become certified in 6 - 8 weeks</p>
+              <button type="button" class="btn mt-4" id="mainbutton">
+                Learn More<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+        <div class="card mr-lg-4">
+            <div class="card-body lastcards col">
+                <div class="rounded-circle card-circle mb-3">
+                    <img src="" alt="">
+                </div>
+              <h6 class="card-subtitle mb-2">Need the right talent for your project?</h6>
+              <h5 class="card-title mb-3">PM Jobs Portal</h5>
+              <p class="card-text mb-5">Connecting Project Professionals to Project Opportunities</p>
+              <button type="button" class="btn mt-4" id="mainbutton">
+                Download free Chapters<i class="fas fa-long-arrow-alt-right ml-3"></i>
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
         </div>
       </div>
 
@@ -548,7 +677,7 @@
     </footer>
   </body>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="jquery-3.5.1.min.js"></script>
+  <script src="/jquery-3.6.0.min.js"></script>
   <script src="/script.js"></script>
   <script src="bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
 </html>
